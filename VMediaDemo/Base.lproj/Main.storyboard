@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tia-mw-rz4">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home NewVC-->
+        <scene sceneID="Byt-4H-Ltr">
+            <objects>
+                <viewController storyboardIdentifier="HomeNewVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tia-mw-rz4" customClass="HomeNewVC" customModule="VMediaDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nqm-6F-xct"/>
+                        <viewControllerLayoutGuide type="bottom" id="zl7-ye-Srv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VEY-1x-NBR">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" dataMode="prototypes" prefetchingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jwM-CQ-lrr">
+                                <rect key="frame" x="0.0" y="60" width="1920" height="1020"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewLayout key="collectionViewLayout" id="GvU-Mh-ueW" customClass="CustomCollectionViewLayout" customModule="VMediaDemo" customModuleProvider="target"/>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5RL-j8-nTW"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jwM-CQ-lrr" firstAttribute="leading" secondItem="VEY-1x-NBR" secondAttribute="leading" id="MYS-Ih-yyI"/>
+                            <constraint firstAttribute="trailing" secondItem="jwM-CQ-lrr" secondAttribute="trailing" id="ZBp-1s-Xmc"/>
+                            <constraint firstAttribute="bottom" secondItem="jwM-CQ-lrr" secondAttribute="bottom" id="bye-QX-dnv"/>
+                            <constraint firstItem="jwM-CQ-lrr" firstAttribute="top" secondItem="5RL-j8-nTW" secondAttribute="top" id="tHR-P4-1bA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="jwM-CQ-lrr" id="v62-pl-7CE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vc5-bn-BKQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6235" y="120"/>
+        </scene>
+    </scenes>
+</document>
